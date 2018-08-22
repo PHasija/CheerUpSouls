@@ -1,0 +1,13 @@
+---
+declared-services:
+  my-watson-assistant-service:
+    label: conversation
+    plan: free
+applications:
+- name: iDA 
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  services:
+  - iDA
